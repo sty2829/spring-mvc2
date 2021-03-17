@@ -25,6 +25,8 @@ public class UserController {
 	@RequestMapping(value = "/users", method=RequestMethod.GET)
 	public @ResponseBody List<User> getUserList(){
 		List<User> userList = userService.getUserList();
+		log.debug("debug : userList=>{} ,{}", userList, userList);
+		log.info("info : userList=>{} ,{}", userList, userList);
 		return userList;
 	}
 	
@@ -35,7 +37,19 @@ public class UserController {
 	
 	@RequestMapping(value = "/user", method = RequestMethod.GET)
 	public @ResponseBody User getUser(@RequestParam long uiNum) {
-		log.info("uiNum은 => {}", uiNum);
-		return null;
+		log.debug("uiNum은 => {}", uiNum);
+		return userService.getUser(uiNum);
+	}
+	
+	@RequestMapping(value = "/user/update", method = RequestMethod.POST)
+	public @ResponseBody Long updateUser(@RequestBody User user) {
+		log.debug("user => {}", user);
+		return userService.updateUser(user); 
+	}
+	
+	@RequestMapping(value = "/user/delete", method = RequestMethod.POST)
+	public @ResponseBody Long deleteUser(@RequestBody User user) {
+		log.debug("uiNum => {}", user.getUiNum());
+		return userService.deleteUser(user.getUiNum());
 	}
 }

@@ -1,4 +1,4 @@
-package com.test.sp1;
+package com.test.sp1.controller;
 
 import java.sql.Connection;
 import java.sql.SQLException;

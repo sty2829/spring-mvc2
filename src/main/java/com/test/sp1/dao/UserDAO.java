@@ -8,11 +8,11 @@ public interface UserDAO {
 
 	List<User> findUserInfos();
 	
-	User findUserByUiId(int uiId);
+	User findUserByUiId(long uiId);
 	
 	void saveUser(User user);
 	
 	void updateUser(User user);
 	
-	void deleteUser(int uiId);
+	void deleteUser(long uiId);
 }

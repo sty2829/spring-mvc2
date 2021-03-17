@@ -21,6 +21,11 @@ public class UserServiceImpl implements UserService {
 	public List<User> getUserList() {
 		return userDAO.findUserInfos();
 	}
+	
+	@Override
+	public User getUser(long uiId) {
+		return userDAO.findUserByUiId(uiId);
+	}
 
 	@Override
 	public long saveUser(User user) {
@@ -36,12 +41,14 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public long deleteUser(int uiId) {
+	public long deleteUser(long uiId) {
 		userDAO.deleteUser(uiId);
 		if(userDAO.findUserByUiId(uiId)==null) {
 			return 1;
 		}
 		return 0;
 	}
+
+	
 
 }

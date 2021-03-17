@@ -25,7 +25,7 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Override
-	public User findUserByUiId(int uiId) {
+	public User findUserByUiId(long uiId) {
 		return em.find(User.class, uiId);
 	}
 
@@ -40,7 +40,7 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Override
-	public void deleteUser(int uiId) {
+	public void deleteUser(long uiId) {
 		User user = findUserByUiId(uiId);
 		em.remove(user);
 	}

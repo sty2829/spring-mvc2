@@ -8,11 +8,13 @@ public interface UserService {
 
 	List<User> getUserList();
 	
+	User getUser(long uiId);
+	
 	long saveUser(User user);
 	
 	long updateUser(User user);
 	
-	long deleteUser(int uiId);
+	long deleteUser(long uiId);
 	
 	
 }
