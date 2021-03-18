@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testXML>
+   <tests>
+      <rows>
+         <row>
+            <name>hahah</name>
+            <age>22</age>
+         </row>
+         <row>
+            <name>kim</name>
+            <age>32</age>
+         </row>
+         <row>
+            <name>lee</name>
+            <age>42</age>
+         </row>
+      </rows>
+   </tests>
+   <testTitle>Title</testTitle>
+   <testSubTitle>subTitle</testSubTitle>
+</testXML>

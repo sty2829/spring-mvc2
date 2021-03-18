@@ -165,6 +165,13 @@
 		    <artifactId>spring-data-jpa</artifactId>
 		    <version>1.4.3.RELEASE</version>
 		</dependency>
+		
+		<!-- xml to json -->
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20160810</version>
+		</dependency>
 	</dependencies>
     <build>
         <plugins>

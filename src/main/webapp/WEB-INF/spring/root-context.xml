@@ -14,7 +14,7 @@
 		<property name="username" value="jtest" />
 		<property name="password" value="ezen1234" />
 	</bean>
-
+	
 	<bean id="emFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="ds"/>
 		<property name="packagesToScan" value="com.test.sp1.entity"/>
@@ -35,6 +35,9 @@
 	<context:component-scan base-package="com.test.sp1.service" />
 	<context:component-scan base-package="com.test.sp1.dao" />
 	<context:component-scan base-package="com.test.sp1.entity" />
+	<context:component-scan base-package="com.test.sp1.api" />
+	
+	<bean class="org.codehaus.jackson.map.ObjectMapper"/>
 	
 	<tx:annotation-driven/>
 </beans>
