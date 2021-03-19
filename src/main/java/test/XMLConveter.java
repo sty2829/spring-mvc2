@@ -9,9 +9,9 @@ import org.codehaus.jackson.map.ObjectMapper;
 import org.json.JSONObject;
 import org.json.XML;
 
-import com.test.sp1.xml.movie.Item;
-import com.test.sp1.xml.movie.Items;
-import com.test.sp1.xml.movie.Result;
+import com.test.sp1.entity.movie.Item;
+import com.test.sp1.entity.movie.Items;
+import com.test.sp1.entity.movie.Result;
 
 public class XMLConveter {
 

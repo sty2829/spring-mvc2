@@ -2,6 +2,8 @@ package test;
 
 public class Test {
 
+	private String type;
+	
 	public static void main(String[] args) {
 		
 		String str = "tbl_ui_num";

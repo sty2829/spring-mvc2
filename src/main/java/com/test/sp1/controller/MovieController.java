@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.test.sp1.entity.movie.Result;
 import com.test.sp1.service.MovieService;
-import com.test.sp1.xml.movie.Result;
 
 @Controller
 public class MovieController {
@@ -21,7 +21,6 @@ public class MovieController {
 	
 	@RequestMapping(value = "/movies", method = RequestMethod.GET)
 	public @ResponseBody Result getResult() {
-		System.out.println("오나");
 		return movieService.getResult();
 	}
 }

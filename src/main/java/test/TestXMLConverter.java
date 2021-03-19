@@ -8,7 +8,7 @@ import org.codehaus.jackson.map.ObjectMapper;
 import org.json.JSONObject;
 import org.json.XML;
 
-import com.test.sp1.xml.test.Result;
+import com.test.sp1.entity.test.Result;
 
 public class TestXMLConverter {
 

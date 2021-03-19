@@ -1,6 +1,6 @@
 package com.test.sp1.service;
 
-import com.test.sp1.xml.movie.Result;
+import com.test.sp1.entity.movie.Result;
 
 public interface MovieService {
 

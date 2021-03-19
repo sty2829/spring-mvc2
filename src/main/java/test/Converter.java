@@ -24,21 +24,11 @@ public class Converter {
 
 	public static void main(String[] args) {
 		Converter converter = new Converter();
-		converter.ColumnConverter("UI_NUM\r\n"
-				+ "UI_NAME\r\n"
-				+ "UI_ID\r\n"
-				+ "UI_PWD\r\n"
-				+ "UI_GENRE\r\n"
-				+ "UI_EMAIL\r\n"
-				+ "UI_PHONE1\r\n"
-				+ "UI_PHONE2\r\n"
-				+ "UI_ADDRESS\r\n"
-				+ "UI_HINT\r\n"
-				+ "UI_ANSWER\r\n"
-				+ "CREDAT\r\n"
-				+ "CRETIM\r\n"
-				+ "MODDAT\r\n"
-				+ "MODTIM\r\n"
-				+ "UI_IMG");
+		converter.ColumnConverter("MI_NUM\r\n"
+				+ "MI_ID\r\n"
+				+ "MI_PWD\r\n"
+				+ "MI_NAME\r\n"
+				+ "MI_AGE\r\n"
+				+ "MI_INFO");
 	}
 }

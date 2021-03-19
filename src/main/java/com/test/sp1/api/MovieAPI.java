@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.test.sp1.xml.movie.Result;
+import com.test.sp1.entity.movie.Result;
 
 @Component
 public class MovieAPI {
