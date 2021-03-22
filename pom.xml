@@ -172,6 +172,13 @@
 		    <artifactId>json</artifactId>
 		    <version>20160810</version>
 		</dependency>
+		<!-- spring frame work -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-test</artifactId>
+		    <version>${org.springframework-version}</version>
+		    <scope>test</scope>
+		</dependency>
 	</dependencies>
     <build>
         <plugins>
